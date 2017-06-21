@@ -31,7 +31,7 @@ h3 {
 	text-align: center;
 	margin: 5px 0;
 	padding: 0;
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 }
 
@@ -53,7 +53,7 @@ h3 {
 	background: url(https://goo.gl/he8e83);
 	height: 80px;
 	position: fixed;
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 #nav {
@@ -164,7 +164,7 @@ h3 {
 	display: block;
 	position: relative;
 	bottom: -54px;
-	left: -102px;
+	left: 100px;
 }
 
 #snowflakes2 {
@@ -174,8 +174,9 @@ h3 {
 	margin: 0 auto;
 	display: block;
 	position: relative;
-	bottom: -33px;
+	bottom: -31px;
 	left: -100px;
+	z-index: 0;
 }
 
 #slide1, #slide2 {
