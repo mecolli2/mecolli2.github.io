@@ -208,6 +208,15 @@ h3 {
 	padding: 200px 0;
 }
 
+#slide4 {
+	background-color: $FFF;
+	color: #333;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
+}
+
 #slide5 {
 	background: url(https://goo.gl/DKGSUx) 50% 0 no-repeat fixed;
 	height: 200px;
