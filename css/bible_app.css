@@ -1,0 +1,547 @@
+/*						*/
+/*		GENERAL 		*/
+/*						*/
+
+html {
+	overflow-x: hidden;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+html, body {
+	width: 100%;
+	font-family: Arimo;
+	margin: 0;
+	height: auto;
+}
+
+nav {
+	width: 100%;
+	height: 4em;
+	background-color: #FFF;
+	box-shadow: 0px -9px 16px #000;
+	position: fixed;
+	display: inline-block;
+	z-index: 2;
+}
+
+p {
+	margin: 0;
+}
+
+sup {
+	font-size: .65em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+/*								*/
+/*		HAMBURGER MENU ICON		*/
+/*								*/
+
+.menu-icon {
+	width: 2em;
+	height: 2em;
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	z-index: 5;
+}
+
+.menu-icon-all {
+	width: 1.5em;
+	height: .25em;
+	background: #B2BDBA;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	transition: .5s;
+	z-index: 5;
+}
+
+.menu-icon-all:before, .menu-icon-all:after {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: .25em;
+	background: #B2BDBA;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	transition: .5s;
+}
+
+.menu-icon-all:before {
+	top: -0.5em;
+}
+
+.menu-icon-all:after {
+	top: 0.5em;
+}
+
+.menu-icon.active .menu-icon-all {
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+}
+
+.menu-icon.active .menu-icon-all:before {
+	transform: rotate(45deg);
+	top: 0;
+	background: #FFF;
+}
+
+.menu-icon.active .menu-icon-all:after {
+	transform: rotate(135deg);
+	top: 0;
+	background: #FFF;
+}
+
+.none {
+	border-bottom: 0.25em #000 solid !important;
+}
+
+
+/*						*/
+/*		BOOK TITLE 		*/
+/*						*/
+
+#book-chapter {
+	margin: 0 40% 0 40%;
+	position: relative;
+	display: inline-block;
+	height: 4em;
+	width: 20%;
+	float: right;
+	font-family: inherit;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+
+/*					*/
+/*		VERSES 		*/
+/*					*/
+
+.top-para {
+	margin-top: 6em;
+	text-indent: 2.85em;
+}
+
+.verse {
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	line-height: 2em;
+	font-size: 1.25em;
+	margin: 3em 10% 3em 10%;
+}
+
+.first-after-top {
+	margin-top: 2.5em;
+	text-indent: 2.85em;
+}
+
+.up {
+	display: block !important;
+}
+
+.verse-pop-up {
+	width: 80%;
+	margin: 5% 10% 0 10%;
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #dbe0df;
+	z-index: 0;
+	position: relative;
+	height: auto;
+	display: none;
+}
+
+.verse-pop-up iframe {
+	width: 100%;
+	height: 500px;
+}
+
+.verse-pop-up p {
+	margin: 25px 15% auto 15%;
+	width: 70%;
+	height: auto;
+	position relative;
+	display: inline-block;
+}
+
+.video-verse {
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-decoration-color: #B2BDBA;
+	transition: 0.5s;
+}
+
+.underline {
+	text-decoration-style: solid;
+	text-decoration-color: #595E5D;
+	transition: 0.5s;
+}
+
+
+/*						*/
+/*		BIG MENU 		*/
+/*						*/
+
+.big-menu {
+	background: url(http://www.dracristineriva.com.br/images/fundo_parallax.jpg) no-repeat;
+	width: 100% !important;
+	height: 100%;
+	position: fixed;
+	z-index: 4;
+	display: none;
+	font-family: "Lato";
+}
+
+.big-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    position: fixed;
+    display: block;
+    top: 8%;
+    left: 40%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    transition: .5s;
+}
+
+.links li {
+	text-align: left;
+	font-size: 2.5em;
+	margin: 30px auto 70px auto;
+}
+
+.links li h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.highlighting {
+	background: rgba(251, 156, 97, .9);
+    width: 0;
+    height: 0.45em;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: auto;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.highlight-container-1 {
+    top: 3.25em;
+}
+
+.highlight-container-1.lengthen {
+	width: 4.25em !important;
+}
+
+.highlight-container-2 {
+    top: 6.85em;
+}
+
+.highlight-container-2.lengthen-2 {
+	width: 5.5em !important;
+}
+
+.highlight-container-3 {
+    top: 10.4em;
+}
+
+.highlight-container-3.lengthen-3 {
+	width: 6.25em !important;
+}
+
+.highlight-container-4 {
+    top: 14em;
+}
+
+.highlight-container-4.lengthen-4 {
+	width: 5em !important;
+}
+
+.hide {
+	display: none;
+}
+
+.lefter {
+	position: fixed;
+	top: 0;
+	left: 2%;
+	width: 15%;
+	height: 100%;
+	box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+	transition: .5s;
+}
+
+.fixed {
+	position: fixed;
+	top: 30%;
+}
+
+.smaller {
+	text-align: left;
+	font-size: 1.5em !important;
+	margin: 30px auto 0 auto !important;
+}
+
+.all-books {
+	position: relative;
+	left: 18%;
+	display: none;
+	width: 15%;
+	height: 100%;
+	box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.c08 {
+	display: none;
+}
+
+.individual-books {
+	display: none;
+	border-top: solid 1px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	padding: 5px 0 5px 20px;
+	text-decoration: none;
+}
+
+.all-books-list {
+	display: none;
+	width: 100%;
+	position: relative;
+	top: 0;
+}
+
+.all-books-list-sm {
+	display: none;
+}
+
+.all-chapters {
+    position: fixed;
+    left: 34%;
+    display: none;
+    width: 66.4%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    top: 0;
+    float: left;
+}
+
+.square-list {
+    display: inline-block;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 4em;
+    height: 4em;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.square-list h2 {
+    font-size: 1.5em;
+    font-family: inherit;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*					*/
+/*		ARROWS 		*/
+/*					*/
+
+.next {
+	position: fixed;
+	top: 80%;
+	right: 2%;
+	border-radius: 100%;
+	fill:none;
+	stroke:black;
+	stroke-width:1;
+	fill-rule:evenodd;
+	box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+}
+
+.next:active {
+	top: 80.1%;
+	right: 2.1%;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+}
+
+.back {
+	position: fixed;
+	top: 80%;
+	left: 2%;
+	border-radius: 100%;
+	fill:none;
+	stroke:black;
+	stroke-width:1;
+	fill-rule:evenodd;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+}
+
+.back:active {
+	top: 80.1%;
+	left: 2.1%;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+	transition: .2s;
+}
+
+.next-sm {
+	position: fixed;
+	display: none;
+	top: 50%;
+	right: 2%;
+	fill:none;
+	stroke:black;
+	stroke-width:1;
+	fill-rule:evenodd;
+	transition: .2s;
+}
+
+.back-sm {
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 2%;
+	fill:none;
+	stroke:black;
+	stroke-width:1;
+	fill-rule:evenodd;
+	transition: .2s;
+}
+
+
+/*							*/
+/*		SCREEN SIZING 		*/
+/*							*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	
+	.verse {
+		font-size: 1em;
+	}
+	
+	.first-after-top {
+		margin-top: 2em;
+		text-indent: 1.5em;
+	}
+	
+	.verse-pop-up {
+		width: 100%;
+		margin: 5% 0 0 0;
+		height: 100%;
+	}
+	
+	.verse-pop-up iframe {
+		height: 100%;
+	}
+	
+	.menu-icon.active .menu-icon-all:before {
+		background: #000;
+	}
+
+	.menu-icon.active .menu-icon-all:after {
+		background: #000;
+	}
+	
+	.links {
+		top: 18%;
+		left: 12%;
+	}
+	
+	.links li {
+		margin: 0 auto 0 auto;
+	}
+	
+	.hightlight-container-2 {
+		top: 5.05em;
+	}
+	
+	.all-books {
+		position: fixed;
+		display: inline-block;
+		left: 100%;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+	
+	.all-books-list {
+		display: inline-block;
+	}
+	
+	.all-books-list-sm {
+		display: inline-block;
+		position: fixed;
+		top: 0;
+		float: left;
+		font-size: 12px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 100%;
+	}
+	
+	.big-menu ul {
+		position: fixed;
+		top: 14%;
+	}
+	
+	.individual-books {
+		display: inline-block;
+	}
+	
+	.chap-title {
+		margin-top: 5.5%;
+		padding-left: 39%;
+		box-sizing: border-box;
+	}
+	
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 640px){
+	
+	#book-chapter{
+		margin: 0 35% 0 35%;
+		letter-spacing: 1px;
+		width: 30%;
+	}
+	
+	.next-sm, .back-sm {
+		display: block;
+	}
+	
+	.next, .back {
+		display: none;
+	}
+}
