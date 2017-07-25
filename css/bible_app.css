@@ -448,10 +448,13 @@ a {
 
 @media only screen and (min-device-width: 320px){
 	
+	
+	
 	#book-chapter{
 		margin: 0 35% 0 35%;
 		letter-spacing: 1px;
 		width: 30%;
+		font-size: 16px;
 	}
 	
 	.next-sm, .back-sm {
