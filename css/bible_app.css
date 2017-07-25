@@ -446,7 +446,21 @@ a {
 /*		SCREEN SIZING 		*/
 /*							*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+@media only screen and (min-device-width: 320px){
+	
+	#book-chapter{
+		margin: 0 35% 0 35%;
+		letter-spacing: 1px;
+		width: 30%;
+	}
+	
+	.next-sm, .back-sm {
+		display: block;
+	}
+	
+	.next, .back {
+		display: none;
+	}
 	
 	.verse {
 		font-size: 1em;
@@ -527,21 +541,4 @@ a {
 		box-sizing: border-box;
 	}
 	
-}
-
-@media only screen and (min-device-width: 300px) and (max-device-width: 640px){
-	
-	#book-chapter{
-		margin: 0 35% 0 35%;
-		letter-spacing: 1px;
-		width: 30%;
-	}
-	
-	.next-sm, .back-sm {
-		display: block;
-	}
-	
-	.next, .back {
-		display: none;
-	}
 }
