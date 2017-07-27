@@ -25,7 +25,7 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	if ($(window).width() < 768) {
+	if ($(window).width() < 981) {
 		$('#books').click(function(y) {
 			y.preventDefault();
 			$('.links').animate({'left':'-100%'},500);
