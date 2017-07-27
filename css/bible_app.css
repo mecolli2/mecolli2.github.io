@@ -441,6 +441,18 @@ a {
 	transition: .2s;
 }
 
+.temporary {
+	width: 50px;
+	height: 50px;
+	background: #000;
+	color: #FFFFFF;
+	font-size: 20px;
+	position: fixed;
+	top: 3%;
+	right: 3%;
+	z-index: 100;
+}
+
 
 /*							*/
 /*		SCREEN SIZING 		*/
