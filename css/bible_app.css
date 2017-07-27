@@ -517,7 +517,7 @@ a {
 		position: fixed;
 		top: 0;
 		float: left;
-		font-size: 12px;
+		font-size: 77px;
 		overflow-x: hidden;
 		overflow-y: scroll;
 		height: 100%;
@@ -530,13 +530,18 @@ a {
 	
 	.individual-books {
 		display: inline-block;
+		padding: 24px 0 24px 10%;
 	}
 	
 	.chap-title {
-		margin-top: 5.5%;
-		padding-left: 39%;
-		box-sizing: border-box;
+    	margin: 5.5% 0 7% 37%;
+    	box-sizing: border-box;
+    	position: fixed;
+    	display: inline-block;
+    	float: left;
+    	font-size: 80px;
 	}
+	
 	.menu-icon {
 	    width: 4.5em;
     	height: 4.5em;
