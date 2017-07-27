@@ -45,6 +45,9 @@ $(document).ready(function(){
 		});	
 	}
 	
+	var ww = $(window).width();
+	$('.temporary').html(ww);
+	
 	$('.chap-title').click(function(n) {
 		y.preventDefault();
 		$('.links').animate({'left':'0'},500);
