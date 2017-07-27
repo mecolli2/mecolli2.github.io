@@ -25,12 +25,13 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	if ($(window).width() < 480) {
+	if ($(window).width() < 768) {
 		$('#books').click(function(y) {
 			y.preventDefault();
 			$('.links').animate({'left':'-100%'},500);
 			$('.all-books').animate({'left':'0'},500);
 			$('.chap-title').toggleClass('hide');
+			console.log('less than ipad')
 		});
 	} else {
 		$('#books').click(function(n){
@@ -40,6 +41,7 @@ $(document).ready(function(){
 			$('.all-books, .all-books-list, .all-chapters').animate({width:'toggle'}, 550);
 			$('.individual-books').toggle(10);
 			n.preventDefault();
+			console.log('more than ipad')
 		});	
 	}
 	
