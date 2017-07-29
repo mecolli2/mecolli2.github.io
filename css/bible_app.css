@@ -152,19 +152,22 @@ a {
 }
 
 .verse-pop-up {
-	width: 80%;
-	margin: 5% 10% 0 10%;
-	background-color: #FFF;
-	box-shadow: 0px 0px 5px #dbe0df;
-	z-index: 0;
-	position: relative;
-	height: auto;
+	position: fixed;
 	display: none;
-}
-
-.verse-pop-up iframe {
+	bottom: 0;
 	width: 100%;
-	height: 500px;
+	margin: 0;
+	background-color: #FFF;
+	box-shadow: 0px 20px 30px 14px rgba(0,0,0,0.8);
+	z-index: 3;
+	height: auto;
+}
+	
+.verse-pop-up iframe {
+	width: 30%;
+	height: 200px;
+	margin: 0 0 0 25%;
+	float: left;
 }
 
 .verse-pop-up p {
@@ -453,6 +456,41 @@ a {
 	z-index: 100;
 }
 
+.higher {
+	top: 50%;
+}
+
+/*					*/
+/*		FOOTER 		*/
+/*					*/
+
+footer {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	display: none;
+	z-index: 1;
+}
+
+.church-info {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	font-size: 18px;
+	float: right;
+	margin: 5% 24% 0 0;
+}
+
+.more-info {
+	display: none;
+	position: relative;
+}
+
+.open {
+	display: inline-block !important;
+}
+
 
 /*							*/
 /*		SCREEN SIZING 		*/
@@ -481,7 +519,7 @@ a {
 	
 	.verse-pop-up {
 		width: 100%;
-		height: 500px;
+		height: 675px;
 		margin: 5% 0 0 0;
 	}
 	
@@ -545,7 +583,7 @@ a {
 		padding: 24px 0 24px 10%;
 	}
 	
-	.chap-title {
+	.chap-title1, .chap-title2 {
     	margin: 5.5% 0 7% 37%;
     	box-sizing: border-box;
     	position: fixed;
@@ -584,6 +622,64 @@ a {
 	
 	.big-menu{
 		background-size: 336%;
+	}
+	
+	.all-chapters {
+	    position: fixed;
+	    left: 100%;
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+	    overflow-y: hidden;
+	    overflow-x: hidden;
+	    top: 0;
+	    float: left;
+	}
+	
+	.square-list {
+		width: 100%;
+		height: 230px;
+		padding-top: 60px;
+		font-size: 3.5em;
+		border-right: none;
+	}
+	
+	.book {
+		width: 100%;
+	}
+	
+	.verse-pop-up iframe {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.church-info {
+		display: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	
+	.church-info li{
+		width: 100%;
+		height: auto;
+		text-align: center;
+		font-size: 35px;
+	}
+	
+	.more-info {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 2%;
+	}
+	
+	.more-info h3 {
+		font-size: 40px;
+		padding: 0;
+		margin: 1% 0 0 38%;
 	}
 	
 }
