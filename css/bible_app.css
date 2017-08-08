@@ -183,6 +183,7 @@ a {
 	text-decoration-style: dashed;
 	text-decoration-color: #B2BDBA;
 	transition: 0.5s;
+	background-color: rgba(70, 74, 72, 0.25);
 }
 
 .underline {
@@ -663,6 +664,7 @@ footer {
 	
 	.church-info li{
 		width: 100%;
+		
 		height: auto;
 		text-align: center;
 		font-size: 35px;
@@ -672,16 +674,50 @@ footer {
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		height: 40px;
-		margin-bottom: 2%;
+		height: 62px;
 	}
 	
 	.more-info h3 {
-		font-size: 40px;
-		padding: 0;
-		margin: 1% 0 0 38%;
+		width: 33%;
+    	font-size: 40px;
+    	padding: 0;
+    	margin: 1% 0 1% 33%;
+    	text-align: center
 	}
 	
+	.menu-icon-all-mi {
+		width: 62px;
+		height: 62px;
+		position: absolute;
+		top: 0;
+		right: 4%;
+	}
+	
+	.exes {
+		width: 40px;
+		height: 5px;
+		background: #B2BDBA;
+		position: absolute;
+		top: 50%;
+		right: 5%;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		z-index: 5;
+		transform: rotate(135deg);
+	}
+	
+	.exes:before {
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 5px;
+		background: #B2BDBA;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		transform: rotate(90deg);
+	}
+	
+	footer {
+		height: 650px;
+	}
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 640px){
